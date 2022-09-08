@@ -1,0 +1,31 @@
+body {
+    width: 60%;
+    margin: 0 auto;
+}
+
+header {
+    margin: 30px;
+}
+
+
+form {
+    background-color: goldenrod;
+    padding: 40px 20px 10px 20px;
+    box-sizing: border-box;
+    border-radius: 5%;
+    margin-bottom: 30px;
+}
+
+.form-text {
+    color: #212529;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.my-button {
+    text-align: center;
+}
+
+.btn {
+    margin: au
+}

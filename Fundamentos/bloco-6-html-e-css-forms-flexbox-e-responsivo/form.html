@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submeter Palestra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="container text-center">
+    <h1>Submeter Palestra</h1>
+    <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
+  </header>
+
+  <main>
+    <form action="" method="post">
+      <div class="container">
+        <div class="form-floating mb-3">
+          <input type="text" name="full-name" class="form-control" id="floatingInput" required placeholder="Ex: Maria de Fátima Tavares"/>
+          <label for="floatingInput" class="form-label">Nome completo:</label>
+        </div>
+      
+
+      <fieldset class="mb-3">
+        <legend class="lead">Tipo de palestra</legend>
+        <input type="radio" name="talk-type" class="form-check-input" id="talk-type-1" value="main-stage"> <label for="talk-type-1" class="form-check-label">Palco Principal</label>
+
+        <input type="radio" name="talk-type" class="form-check-input" id="talk-type-2" value="workshop" checked /> <label for="talk-type-2" class="form-check-label">Workshop</label>
+      </fieldset>
+
+      <div class="mb-3">
+        <label for="t-shirt">Tamanho da camiseta</label>
+        <select name="t-shirt" class="form-select form-select-sm" id="t-shirt">
+          <option value="" disabled selected hidden>Selecione o tamanho da camiseta</option>
+          <option value="pp">PP</option>
+          <option value="p">P</option>
+          <option value="m">M</option>
+          <option value="g">G</option>
+        </select> 
+      </div>
+
+      <div class="mb-3">
+        <label for="abstract" class="form-label">Resumo da sua palestra:</label>
+        <textarea name="abstract" id="abstract" class="form-control"></textarea>
+        <p class="form-text">Descreva sua palestra com 500 palavras ou menos</p>
+      </div>
+
+      <div class="mb-3">
+        <input type="checkbox" name="available" id="available" value="is-available" required>
+        <label for="available" class="form-check-label">Estou disponível no dia da palestra</label>
+      </div>
+
+      <div class="mb-3 my-button">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+    </form>
+  </main>
+</body>
+</html>
