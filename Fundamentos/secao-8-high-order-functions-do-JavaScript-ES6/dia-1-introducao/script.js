@@ -19,8 +19,8 @@ const newEmployees = (callback) => {
 
 //Sorteador de loteria
 
-const result = (bettedNumber, rightNumber) => {
-    bettedNumber === rightNumber;
+const result = (bettedNumber, randomNumber) => {
+    bettedNumber === randomNumber;
 }
 
 const sorteio = (bettedNumber, callback) => {
